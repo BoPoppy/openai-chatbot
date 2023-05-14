@@ -9,9 +9,7 @@ import {
   AccordionTrigger,
 } from './ui/accordion';
 
-type Props = {};
-
-const Chat = (props: Props) => {
+const Chat = () => {
   return (
     <Accordion
       type="single"

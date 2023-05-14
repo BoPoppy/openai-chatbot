@@ -1,8 +1,4 @@
-import React from 'react';
-
-type Props = {};
-
-const ChatHeader = (props: Props) => {
+const ChatHeader = () => {
   return (
     <div className="w-full flex gap-3 justify-start items-center text-zinc-800">
       <div className="flex flex-col items-start text-sm">
