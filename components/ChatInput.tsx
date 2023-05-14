@@ -13,7 +13,7 @@ interface Props extends HTMLAttributes<HTMLDivElement> {}
 const ChatInput = ({ className, ...props }: Props) => {
   const [input, setInput] = useState<string>('');
 
-  const { mutate: sendMessage, isLoading } = useMutation({
+  const { mutate: sendMessage } = useMutation({
     mutationFn: async (message: Message) => {
       const response = await fetch('/api/message', {
         method: 'POST',
